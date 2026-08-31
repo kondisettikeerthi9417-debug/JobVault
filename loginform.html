@@ -34,28 +34,42 @@
             margin-bottom: 10px;
         }
 
-        input {
-            font-size: 25px;
+        .sub input {
+            padding-left: 10px;
+            display: inline-block;
+
+        }
+
+        .set,
+        .sub {
+            display: inline-block;
+            margin: 5px;
+            font-size: medium;
         }
     </style>
 </head>
 
 <body>
-    <h2>JOB PORTAl</h2>
+    <h2>JOB PORTAL</h2>
 
     <div class="loginform">
-        <form>
+        <form action="C:\Users\keert\OneDrive\Desktop\Job verify\secondForm.html" target="_blank" method="get">
+
             <div>
-                <label for="login.html">Username/mobi:</label>
-                <input type="text" id="login" class="login">
+                <label for="email:">Username/Email:</label>
+                <input type="email" id="email" name="email" required>
             </div>
 
             <div class="divmargin">
-                <label for="login.html">Password:</label>
-                <input type="text" id="Password" class="Password">
+                <label for="password">Password:</label>
+                <input type="password" id="Password" name="password" required>
             </div>
-
-            <input type="submit" value="submit">
+            <div class="sub">
+                <input type="submit" value="submit">
+            </div>
+            <div class="set">
+                <input type="reset" value="reset">
+            </div>
         </form>
     </div>
 
