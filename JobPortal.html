@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Job Portal</title>
+    <style>
+        .jobTile {
+            width: 250px;
+            height: 250px;
+            border: 1px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 10px;
+            box-shadow: 5px;
+            background-color: rgb(218, 223, 224);
+            padding: 30px;
+            padding-bottom: 10px;
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+
+        .s_styling,
+        .F_styling {
+            margin: auto;
+        }
+
+        .s_styling {
+            background-color: rgb(39, 39, 143);
+            color: white;
+        }
+
+        .s_styling h2,
+        .F_styling h2 {
+            margin: 0;
+            text-align: center;
+
+        }
+
+        .s_styling p,
+        .F_styling p {
+            margin: 0;
+        }
+
+        .F_styling {
+            background-color: rgb(34, 34, 113);
+            color: white;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JobVault</h1>
+    <p>Secure your next great hire with JobVault. </p>
+    <p id="demo"></p>
+
+    <section class="s_styling">
+        <h2>About JobVault</h2>
+        <p>JobVault is the ultimate secure hub for career growth. We connect ambitious job seekers with top-employers,
+            keeping the best opportunities unlocked and accessible. Your next career breakthrough starts here.</p>
+    </section>
+
+    <footer class="F_styling">
+        <h2>About the companies</h2>
+        <h3>Cognizant</h3>
+        <p>Cognizant is a multinational technology services and professional consulting company that provides digital,
+            artificial intelligence (AI), and outsourcing solutions.</p>
+        <h3>RealPage</h3>
+        <p>RealPage is a leading American technology company that provides software, data analytics, and AI-driven
+            solutions for the real estate industry.</p>
+        <p><b>2026 JobVault.All Rights Reserved</b></p>
+    </footer>
+
+    <script>
+        let x = " ";
+        const myObj = {
+            name: "companies",
+            location: "India",
+            MncOpenings: [
+                {
+                    name: "Cognizant",
+                    jobNames: [
+                        "Cybersecurity Engineer - Threat Management", "Full Stack Java Developer", "Senior IAM Analyst", "senior-test-automation-engineer", "Java-microservices-developer"],
+                    url: [
+                        "https://careers.cognizant.com/india-en/jobs/00070153281/cybersecurity-engineer-threat-management/", "https://careers.cognizant.com/india-en/jobs/00070337764/full-stack-java-developer/", "https://careers.cognizant.com/india-en/jobs/00070153191/senior-iam-analyst/", "https://careers.cognizant.com/india-en/jobs/00069456522/senior-test-automation-engineer/", "https://careers.cognizant.com/india-en/jobs/00070331642/java-microservices-developer/"
+                    ]
+                },
+                {
+                    name: "RealPage",
+                    jobNames: ["Developr-2", "solutions-delivery-engineer", "senior-product-manager", "Hr-Business-Partner"],
+                    url: ["https://careers-international-realpagepms.icims.com/jobs/14042/developer-ii/candidate?from=login&eem=SUkTkGAdBZDFNjdviNQIHkizisscj1pQf0Qj9p2rhtAnY30IrUt6G_FjjHcZ_XKB&code=856f263bcfa1307eb9624729be09d2a01a2d53d43f3c839d00e5f072e86a7415", "https://careers-realpagepms.icims.com/jobs/14485/solutions-delivery-engineer-%28remote%29/candidate?from=login&eem=qTQtyBTN7IkqrYnmk6sT7_7vvsZIoA91N1YqBRsejPHdNpP1OFhenRZVd3ETx9gj&code=172a91746571186e7c41411aba0e95b0b0ac42b2c432803409a78a89111b3ef3", "https://careers-realpagepms.icims.com/jobs/14325/senior-software-engineer-%28solutions%29---typescript-node.js-react/candidate?from=login&eem=u9br7aMxASCkOTjBfOHMjMzf91vmD5Wi19UEx5urkZxJ_pzweFLpfzgQWudv7kZa&code=90e88564f5e60ac54b054ca4cf6c7db033ca57e9da5f6046522da4d1b7f15d0e", "https://careers-realpagepms.icims.com/jobs/14320/developer-analyst-ii/candidate?from=login&eem=KkLidj-HFQ5xrZt45Mn67TnpKi9vkcieJAhh9jtEJn5c9fIwP1Ra_AVMmwVOxoZe&code=b5dfe22c4d5b9f7ff56fafa445326e73fcdabd43fded32a43eb6014d992abd2a", "https://careers-realpagepms.icims.com/jobs/14198/senior-product-manager/candidate?from=login&eem=WAKSP3IyY1V4_az9XwEGX8pnrswY_Ou7E-IcPh0yvetYHK7L4HcXhx1b8kbLyJqn&code=2c0229dd63fdea32192ffa80c3ac5b3ee1554920ea56302b817abed125eda88b"]
+                },
+                {
+                    name: "HCL",
+                    jobNames: ["Senior-Technical-Lead", "SeniorAnalyst-English", "Technical-Lead", "Azur-Data-Architect"],
+                    url: ["https://careers.hcltech.com/job/Senior-Technical-Lead/66700-en_US", "https://careers.hcltech.com/job/SeniorAnalyst-English%2C-Latin%2C-Windows/90683-en_US", "https://careers.hcltech.com/job/Technical-Lead/148484-en_US", "https://careers.hcltech.com/job/Azure-Data-Architect/141151-en_US"]
+                },
+                {
+                    name: "Accenture",
+                    jobNames: ["Custom software Engineer", "Web developer", "Senior Analyst"],
+                    url: ["https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5303096-S1993775_en&title=Custom+Software+Engineer", "https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5345511-S1994918_en&title=Web+Developer", "https://www.accenture.com/in-en/careers/jobdetails?id=14385008_en&title=Senior+Analyst+-+Content+Development"]
+                },
+                {
+                    name: "NTT data",
+                    jobNames: ["Dev-Ops", "Backend-MicroServicious-Java", "AI-Architeect", "Senior-MsEngineer-Network"],
+                    url: ["https://careers.services.global.ntt/global/en/job/16cc202bdffed60/Dev-Ops", "https://careers.services.global.ntt/global/en/job/13eb0f1d5932900/Backend-Microservicios-Java", "https://careers.services.global.ntt/global/en/job/b03c4a96d31c700/AI-Architect", "https://careers.services.global.ntt/global/en/job/R-128662/Senior-MS-Engineer-Network"]
+                },
+                {
+                    name: "Wipro",
+                    jobNames: ["Solution-Architect", "Senior-Analyst", "SalesForce-Developer", "Exponential-Engineer-Head"],
+                    url: ["https://careers.wipro.com/job/Solution-Architect-L2/133525-en_US", "https://careers.wipro.com/job/Senior-Analyst/109618-en_US", "https://careers.wipro.com/job/Salesforce-Developer/168566-en_US", "https://careers.wipro.com/job/Exponential-Engineering-Head/185842-en_US"]
+                }
+            ]
+        };
+
+
+        for (let i in myObj.MncOpenings) {
+            x += '<div class="jobTile">';
+            x += "<h2>" + myObj.MncOpenings[i].name + "</h2>";
+            for (let j = 0; j < myObj.MncOpenings[i].jobNames.length; j++) {
+                x += '<a href="' + myObj.MncOpenings[i].url[j] + '" target="_blank">' + '<button>' + myObj.MncOpenings[i].jobNames[j] + '</button>' + '</a><br><br>';
+
+            }
+            x += '</div>'
+        }
+        document.getElementById("demo").innerHTML = x;
+    </script>
+
+</body>
+
+</html>
