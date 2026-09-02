@@ -19,19 +19,64 @@
             margin-bottom: 20px;
         }
 
+        .imid {
+            width: 500px;
+            height: 500px;
+            box-shadow: 15px;
+            padding-left: 10px;
+            margin-left: 100px;
+            margin-bottom: 20px;
+            display: flex;
+            margin-right: 10px;
+        }
+
+        .quote {
+            display: flex;
+        }
+
+        .imid2 {
+            text-align: center;
+            font-size: 15px;
+            display: flex;
+        }
+
         h1,
         p {
             text-align: center;
         }
 
-        .s_styling,
-        .F_styling {
-            margin: auto;
+        .heading-highlight {
+            color: rgb(238, 78, 20);
         }
 
-        .s_styling {
+        .FreqQ {
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: rgb(221, 220, 220);
+            border-radius: 10px;
+            text-shadow: 10px;
+            box-shadow: 10px;
+        }
+
+        .FreqQ p {
+            text-align: left;
+            padding: 10px;
+            margin-bottom: 0;
+
+        }
+
+        .s_styling,
+        .F_styling {
+            margin: 0;
+        }
+
+        .f_styling {
             background-color: rgb(39, 39, 143);
             color: white;
+            margin-top: -20px;
+
         }
 
         .s_styling h2,
@@ -46,34 +91,88 @@
             margin: 0;
         }
 
-        .F_styling {
+        .s_styling {
             background-color: rgb(34, 34, 113);
             color: white;
-            margin-top: 0;
+            text-decoration: none;
+        }
+
+        .listyling {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            margin: 0;
+            padding: 5px;
+            font-size: medium;
+
+        }
+
+        .listyling:hover {
+            background-color: rgb(98, 98, 168);
+        }
+
+        .ulstyling {
+            list-style-type: none;
+            text-align: center;
+            font-size: medium;
+            margin: 0;
         }
     </style>
 </head>
 
 <body>
-    <h1>JobVault</h1>
-    <p>Secure your next great hire with JobVault. </p>
+    <h1 style="color: rgb(32, 11, 98);">JobVault</h1>
+    <p>Secure your next great hire with JobVault.</p>
     <p id="demo"></p>
-
+    <div class="quote">
+        <section class="imid">
+            <img src="jobsearch1.avif" alt="image">
+        </section>
+        <section class="imid2">
+            <pre>
+            <h1> 
+                Bridging
+                the gap 
+                between
+                <span class="heading-highlight">TALENT </span> 
+                and 
+                <span class="heading-highlight">EMPTY DESKS</span>
+            </h1>
+        </section>
+    </div>
+    <div class="FreqQ">
+        <h2 style="text-align: center;">Most frequently asked questions</h2>
+        <p>What is the best career path for an fresher?
+        <a href="https://www.google.com/search?q=best+careers+for+freshers&oq=best+careers+for+freshers&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCjExNDg1ajBqMTWoAgiwAgHxBX7UWmxYtQPh8QV-1FpsWLUD4Q&sourceid=chrome&source=chrome.rb&ie=UTF-8"><button id="btn1">Explore</button></a>
+        </p>
+        <hr>
+        <p>what are the opening roles in AI?
+        <a href="https://www.google.com/search?q=opening+roles+in+ai&oq=opening+roles+in+ai&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjINCAQQABiGAxiABBiKBTINCAUQABiGAxiABBiKBTINCAYQABiGAxiABBiKBTINCAcQABiGAxiABBiKBdIBCjEwMDEyajBqMTWoAgiwAgHxBfyBZtk6gblJ&sourceid=chrome&source=chrome.rb&ie=UTF-8&jbr=sep:0"><button id="btn1">Explore</button></a>
+        </p>
+        <hr>
+        <p>How can I make my profile more visible to recruiters?
+        <a href="https://www.google.com/search?q=How+can+I+make+my+profile+more+visible+to+recruiters%3F&oq=How+can+I+make+my+profile+more+visible+to+recruiters%3F&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyDQgGEAAYhgMYgAQYigXSAQgxMTAyajBqN6gCB7ACAfEFUYQdAU7wRaA&sourceid=chrome&source=chrome.ob&ie=UTF-8"><button id="btn1">Explore</button></a>
+        </p>
+    </div>
     <section class="s_styling">
+        <h1 style="text-align: center;">About companies</h1>
+        <ul class="ulstyling">
+            <li >
+                <a class="listyling" href="https://www.google.com/search?q=cognizant+company&sca_esv=e45082c6363f9ecc&sxsrf=APpeQnveKrWESEDM0eWm6qmaOeKyAGZNfQ%3A1788346930626&ei=MgKYar_gJZ6TseMP-vyT4Ak&biw=1220&bih=556&oq=cognizant+&gs_lp=Egxnd3Mtd2l6LXNlcnAiCmNvZ25pemFudCAqAggEMg0QABiABBiKBRhDGLEDMgoQABiABBgUGIcCMg0QABiABBiKBRhDGLEDMg0QABiABBiKBRhDGLEDMg0QABiABBiKBRhDGLEDMgoQABiABBiKBRhDMggQABiABBixAzINEAAYgAQYigUYQxixAzITEC4YgAQYigUYQxixAxjHARjRAzIFEAAYgARI8BxQ-gVY-gVwAXgBkAEAmAGrAaABqwGqAQMwLjG4AQHIAQD4AQGYAgKgAuIBwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICFxAuGNwGGLgGGNoGGNgCGMgDGLAD2AEBmAMAiAYBkAYTugYGCAEQARgJkgcDMS4xoAeJCLIHAzAuMbgHvgHCBwUzLTEuMcgHLYAIAQ&sclient=gws-wiz-serp" target="_blank">Cognizant</a></li><br>
+            </li>
+            <li><a class="listyling" href="https://www.google.com/search?q=about+realpage+company&sca_esv=aeb6a8b850e5723c&sxsrf=APpeQnt-LpIokc0zArO0ywLXpuGBKxgS0A%3A1788347200666&ei=QAOYat6bKIm3hvcP9ofbkAg&biw=1220&bih=556&oq=+about+realpage&gs_lp=Egxnd3Mtd2l6LXNlcnAiDyBhYm91dCByZWFscGFnZSoCCAEyBRAAGIAEMgsQABiABBiKBRiRAjIEEAAYHjIEEAAYHjIGEAAYCBgeMgYQABgIGB4yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGA0irJFDWBFjYE3ABeAGQAQCYAaUBoAH-B6oBAzAuN7gBAcgBAPgBAZgCCKACqAnCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA8ICDhAAGOQCGNYEGLAD2AEBwgIXEC4Y2AIYuAYY2gYY3AYYyAMYsAPYAQHCAhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBAcICBBAjGCfCAgYQABgHGB7CAgoQABiABBiKBRhDwgIHECMYsAIYJ8ICBxAAGIAEGA3CAg0QLhgNGK8BGMcBGIAEwgIIEAAYBxgeGArCAgoQABiABBgNGLEDwgIIEAAYCBgHGB6YAwCIBgGQBhK6BgYIARABGAmSBwMxLjegB6knsgcDMC43uAf_CMIHBTMtNS4zyAeEAYAIAQ&sclient=gws-wiz-serp" target="_blank">RealPage</a></li><br>
+            <li><a class="listyling" href="https://www.google.com/search?q=about+hcl+company&oq=about+hcl+&gs_lcrp=EgZjaHJvbWUqDAgBEAAYFBiHAhiABDIGCAAQRRg5MgwIARAAGBQYhwIYgAQyDAgCEAAYFBiHAhiABDINCAMQABiRAhiABBiKBTIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDINCAcQABiRAhiABBiKBTIHCAgQABiABDINCAkQABiRAhiABBiKBdIBCDkyNDVqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8" target="_blank">HCL</a></li><br>
+            <li><a class="listyling" href="https://www.google.com/search?q=about+accenture+company&oq=about+accenture+company&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIMCAEQABhDGIAEGIoFMgYIAhAjGCcyBggDECMYJzIMCAQQABhDGIAEGIoFMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgwICBAAGEMYgAQYigUyDAgJEAAYQxiABBiKBdIBCTE5NzIzajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8" target="_blank">Accenture</a></li><br>
+            <li><a class="listyling" href="https://www.google.com/search?q=about+ntt+data+company&oq=about+ntt+&gs_lcrp=EgZjaHJvbWUqDAgAEAAYFBiHAhiABDIMCAAQABgUGIcCGIAEMg0IARAAGJECGIAEGIoFMgYIAhBFGDkyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyCAgIEAAYFhgeMggICRAAGBYYHtIBCDU1NTZqMGo3qAIHsAIB8QWP2zl8i8YPOg&sourceid=chrome&source=chrome.ob&ie=UTF-8" target="_blank">NTT data</a></li><br>
+            <li><a  class="listyling" href="https://www.google.com/search?q=about+ntt+data+company&oq=about+ntt+&gs_lcrp=EgZjaHJvbWUqDAgAEAAYFBiHAhiABDIMCAAQABgUGIcCGIAEMg0IARAAGJECGIAEGIoFMgYIAhBFGDkyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyCAgIEAAYFhgeMggICRAAGBYYHtIBCDU1NTZqMGo3qAIHsAIB8QWP2zl8i8YPOg&sourceid=chrome&source=chrome.ob&ie=UTF-8" target="_blank">Wipro</a></li><br>
+        </ul>
+    </section>
+    <footer class="f_styling">
         <h2>About JobVault</h2>
         <p>JobVault is the ultimate secure hub for career growth. We connect ambitious job seekers with top-employers,
             keeping the best opportunities unlocked and accessible. Your next career breakthrough starts here.</p>
-    </section>
+                    <p><b>2026 JobVault.All Rights Reserved</b></p>
 
-    <footer class="F_styling">
-        <h2>About the companies</h2>
-        <h3>Cognizant</h3>
-        <p>Cognizant is a multinational technology services and professional consulting company that provides digital,
-            artificial intelligence (AI), and outsourcing solutions.</p>
-        <h3>RealPage</h3>
-        <p>RealPage is a leading American technology company that provides software, data analytics, and AI-driven
-            solutions for the real estate industry.</p>
-        <p><b>2026 JobVault.All Rights Reserved</b></p>
     </footer>
 
     <script>
@@ -129,6 +228,7 @@
             x += '</div>'
         }
         document.getElementById("demo").innerHTML = x;
+
     </script>
 
 </body>
