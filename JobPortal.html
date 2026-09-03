@@ -26,8 +26,12 @@
         .headstyle {
             color: white;
             display: flex;
-            background-color: #5d5757;
+            background-color: #857b7b;
             height: 60px;
+        }
+
+        .headstyle:hover {
+            background-color: #605d5d;
         }
 
         .headlogo {
@@ -43,29 +47,29 @@
             margin-right: 50px;
             padding: 0;
             overflow: hidden;
-            background-color: #5d5757;
             color: white;
         }
 
-        .H-styling {
+        .headstyle li {
             float: left;
         }
 
-        .H-styling {
+        .headstyle li {
             display: block;
             text-align: center;
             padding: 10px;
             text-decoration: none;
+            margin-bottom: 10px;
 
 
         }
 
-        .H-styling a {
+        .headstyle li a {
             color: white;
         }
 
-        .homebar li a:hover {
-            background-color: rgb(85, 85, 85);
+        .headstyle .homebar li :hover {
+            background-color: rgb(61, 61, 61);
             text-decoration: none;
         }
 
@@ -90,29 +94,7 @@
             display: flex;
         }
 
-        .search-styling,
-        .search-styling1,
-        .search-box {
-            display: flex;
-        }
-
-        .search-styling1 {
-            width: 10px;
-            height: 20px;
-            margin-bottom: 20px;
-            margin-top: 5px;
-        }
-
-        .search-styling {
-            width: 300px;
-            height: 20px;
-            margin-right: 20px;
-            margin-left: 120px;
-            margin-bottom: 20px;
-            margin-top: 5px;
-        }
-
-        <<<<<<< HEAD=======>>>>>>>cc8cef1 (add) .h1,
+        .h1,
         p {
             text-align: center;
         }
@@ -188,7 +170,6 @@
             text-align: center;
             font-size: medium;
             margin: 0;
-            padding: 0;
         }
 
         input[type="text"] {
@@ -208,27 +189,11 @@
 
         .fresher-box {
             margin-left: 20px;
-            width: 1300px;
-            text-align: center;
-            height: 200px;
-            font-size: 20px;
-            border: 1px;
-            display: inline-block;
-            vertical-align: top;
-            border-radius: 10px;
-            box-shadow: 5px;
-            background-color: rgb(3, 90, 107);
-            padding: 30px;
-            padding-bottom: 10px;
-            margin-left: 50px;
-            margin-bottom: 20px;
-            margin-top: 20px;
         }
 
         .search-box {
             display: flex;
             align-items: center;
-            gap: 20px;
             margin-top: 20px;
         }
     </style>
@@ -242,10 +207,10 @@
     <section class="headstyle">
         <img class="headlogo" src="jobvault1.jpg">
         <ul class="homebar">
-            <li class="H-styling"><a href="#home">Jobs</a></li>
-            <li class="H-styling"><a href="#news">Applied Jobs</a></li>
-            <li class="H-styling"><a href="#contact">History</a></li>
-            <li class="H-styling"><a href="#about">About</a></li>
+            <li><a href="#home">Jobs</a></li>
+            <li><a href="#news">Applied Jobs</a></li>
+            <li><a href="#contact">History</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
     </section>
 
@@ -259,7 +224,7 @@
         <p>Looking for your first Dream Job?</p>
 
         <div class="fresher-buttons">
-            <button>Register</button>
+            <a href="REGISTER">REGISTER NOW</a>
             <span>OR</span>
             <button>Upload Resume</button>
         </div>
