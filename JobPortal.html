@@ -117,13 +117,33 @@
             font-size: medium;
             margin: 0;
         }
+
+        input[type="text"] {
+            width: 600px;
+            height: 30px;
+            font-size: 16px;
+        }
+
+        .search-box button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+        }
     </style>
 </head>
 
 <body>
     <h1 style="color: rgb(32, 11, 98);">JobVault</h1>
     <p>Secure your next great hire with JobVault.</p>
+
+    <div class="search-box">
+        <input type="text" placeholder="Job title,keywords,orcompany">
+        <input type="text" placeholder="location..">
+        <button>FIND JOBS</button>
+    </div>
     <p id="demo"></p>
+
     <div class="quote">
         <section class="imid">
             <img src="jobsearch1.avif" alt="image">
