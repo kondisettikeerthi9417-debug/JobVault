@@ -19,8 +19,20 @@
             margin-bottom: 20px;
         }
 
+        .head {
+            display: flex;
+        }
+
         .headstyle {
             color: white;
+            display: flex;
+        }
+
+        .headlogo {
+            width: 80px;
+            height: 80px;
+            margin-right: -35px;
+            margin-top: 20px;
         }
 
         .homebar {
@@ -56,6 +68,7 @@
 
         .homebar li:hover {
             background-color: rgb(52, 50, 50);
+            text-decoration: none;
         }
 
         .imid {
@@ -196,13 +209,16 @@
 </head>
 
 <body>
-    <h1 style="color: rgb(32, 11, 98);text-align: center;">JobVault</h1>
+    <section>
+        <h1 style="color: rgb(32, 11, 98);text-align: center;">JobVault</h1>
+    </section>
     <p>Secure your next great hire with JobVault.</p>
     <section class="headstyle">
+        <img class="headlogo" src="jobvault1.jpg">
         <ul class="homebar">
-            <li class="H-styling"><a href="#home">Home</a></li>
-            <li class="H-styling"><a href="#news">News</a></li>
-            <li class="H-styling"><a href="#contact">Contact</a></li>
+            <li class="H-styling"><a href="#home">Jobs</a></li>
+            <li class="H-styling"><a href="#news">Applied Jobs</a></li>
+            <li class="H-styling"><a href="#contact">History</a></li>
             <li class="H-styling"><a href="#about">About</a></li>
         </ul>
     </section>
