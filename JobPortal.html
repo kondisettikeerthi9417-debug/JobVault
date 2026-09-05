@@ -19,6 +19,18 @@
             margin-bottom: 20px;
         }
 
+        #container video {
+            width: 800px;
+            height: 500px;
+            padding: 30px;
+            padding-bottom: 10px;
+            margin-left: 200px;
+            margin-bottom: 20px;
+            box-shadow: 5px;
+            background-color: rgb(218, 223, 224);
+
+        }
+
         .head {
             display: flex;
         }
@@ -86,6 +98,7 @@
 
         .quote {
             display: flex;
+            margin-top: 10px;
         }
 
         .imid2 {
@@ -189,16 +202,22 @@
 
         .fresher-box {
             text-align: center;
-        }
+            width: 1100px;
+            height: 200px;
+            border: 1px;
+            padding: auto;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: #b8b4b4;
+            padding-top: 30px;
 
-        .fresher-button {
-            text-align: center;
         }
 
         .search-box {
             display: flex;
             align-items: center;
             margin-top: 20px;
+            margin-left: 60px;
         }
     </style>
 </head>
@@ -223,18 +242,6 @@
         <input type="text" placeholder="location..">
         <button>FIND JOBS</button>
     </div>
-    <div class="fresher-box">
-        <h2>ARE YOU A FRESHER?</h2>
-        <p>Looking for your first Dream Job?</p>
-
-        <div class="fresher-buttons">
-            <a href="REGISTER"><button>Register</button></a>
-            <span>OR</span>
-            <button>Upload Resume</button>
-        </div>
-    </div>
-    <p id="demo"></p>
-
     <div class="quote">
         <section class="imid">
             <img src="jobsearch1.avif" alt="image">
@@ -251,6 +258,16 @@
             </h1>
         </section>
     </div>
+    <div class="fresher-box">
+        <h2>ARE YOU A FRESHER?</h2>
+        <p>Looking for your first Dream Job?</p>
+
+        <a href="REGISTER"><button>Register</button></a>
+        <span>OR</span>
+        <button>Upload Resume</button>
+    </div>
+    <p id="demo"></p>
+    <div id="container"></div>
     <div class="FreqQ">
         <h2 style="text-align: center;">Most frequently asked questions</h2>
         <p>What is the best career path for an fresher?
@@ -324,6 +341,21 @@
                     name: "Wipro",
                     jobNames: ["Solution-Architect", "Senior-Analyst", "SalesForce-Developer", "Exponential-Engineer-Head"],
                     url: ["https://careers.wipro.com/job/Solution-Architect-L2/133525-en_US", "https://careers.wipro.com/job/Senior-Analyst/109618-en_US", "https://careers.wipro.com/job/Salesforce-Developer/168566-en_US", "https://careers.wipro.com/job/Exponential-Engineering-Head/185842-en_US"]
+                },
+                {
+                    name: "Delloite",
+                    jobNames: ["Senior Consultant,Java Springboot Full Stack ", " Cyber - DPT ,Deputy Manager", "Team Lead,SAP Basis", "Senior Consultant,SAP OpenText"],
+                    url: ["https://southasiacareers.deloitte.com/job/Bengaluru-Senior-Consultant-Java-Springboot-Full-Stack-Bengaluru-Engineering-Platform-Development-&-In/57741444/", "https://southasiacareers.deloitte.com/job/Bengaluru-T&T-Cyber-DPT-Deputy-Manager-Data-Privacy/58655744/", "https://southasiacareers.deloitte.com/job/Mumbai-Team-Lead-SAP-Basis-Mumbai-SAP-DSA-Emerging/58627044/", "https://southasiacareers.deloitte.com/job/Bengaluru-Senior-Consultant-SAP-OpenText-Bengaluru-SAP-DSA-CoE/57606344/"]
+                },
+                {
+                    name: "CapGemini",
+                    jobNames: ["Devops Engineer (GCP)", "Azure Databricks Engineer", "Cloud Security Consultant", "SAP Technical Consultant"],
+                    url: ["https://www.capgemini.com/jobs/540007-en_GB+sap_btp", "https://www.capgemini.com/jobs/342347-en_GB+sap_btp", "https://www.capgemini.com/jobs/529724-en_GB+sap_btp", "https://www.capgemini.com/jobs/417771-en_US+sap_btp"]
+                },
+                {
+                    name: "Virtusa",
+                    jobNames: ["Lead Software Engineer", "Senior Consultant", "Architect (ATC)", "Associate Engineer-Technology"],
+                    url: ["https://www.virtusa.com/careers/job-search/global/en/job/265362/Lead-Software-Engineer", "https://www.virtusa.com/careers/job-search/global/en/job/CREQ244383/Senior-Consultant", "https://www.virtusa.com/careers/job-search/global/en/job/CREQ245054/Architect-ATC", "https://www.virtusa.com/careers/job-search/global/en/job/243686/Associate-Engineer-Technology"]
                 }
             ]
         };
@@ -339,6 +371,16 @@
             x += '</div>'
         }
         document.getElementById("demo").innerHTML = x;
+
+        const result = document.getElementById("container");
+        const png = document.createElement("video");
+        png.src = "best-candidate-selection-animation-gif-download-5562995.mp4";
+        png.controls = true;
+        png.loop = true;
+        png.muted = true;
+        png.autoplay = true;
+        result.appendChild(png);
+
 
     </script>
 
