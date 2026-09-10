@@ -5,9 +5,9 @@
     <title>Job Portal</title>
     <style>
         .jobTile {
-            width: 200px;
+            width: 280px;
             height: 250px;
-            border: 7px;
+            border: 1px;
             display: inline-block;
             vertical-align: top;
             border-radius: 10px;
@@ -15,9 +15,15 @@
             background-color: rgb(218, 223, 224);
             padding: 10px;
             padding-bottom: 100px;
-            margin-left: 89px;
-            margin-right: 89px;
+            margin-left: 55px;
+            margin-right: 0px;
             margin-bottom: 20px;
+        }
+
+        #demo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
         }
 
         #container video {
@@ -88,14 +94,14 @@
         }
 
         .imid {
-            width: 500px;
+            width: 600px;
             height: 500px;
             box-shadow: 15px;
             padding-left: 10px;
-            margin-left: 200px;
+            margin-left: 50px;
             margin-bottom: 20px;
             display: flex;
-            margin-right: 200px;
+            margin-right: 70px;
             border-radius: 10px;
         }
 
@@ -215,8 +221,9 @@
             height: 200px;
             border: 1px;
             padding: auto;
-            margin-left: 210px;
-            margin-right: 200px;
+            margin-left: 60px;
+            margin-right: 95px;
+            margin-bottom: 30px;
             background-color: #b8b4b4;
             padding-top: 30px;
 
@@ -276,7 +283,7 @@
         <span>OR</span>
         <button>Upload Resume</button>
     </div>
-    <p id="demo"></p>
+    <div id="demo"></div>
     <div id="container"></div>
     <div class="FreqQ">
         <h2 style="text-align: center;">Most frequently asked questions</h2>
